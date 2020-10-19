@@ -1,6 +1,6 @@
 # Delilah Restó
 
-_REST API que permita realizar operaciones CRUD sobre una estructura de datos que podría consumir un cliente_
+_Delilah resto es una API REST creada con mucho esfuerzo, para realizar operaciones CRUD sobre una base de datos que puede consumir un cliente_
 
 ## Comenzando 🚀
 
@@ -8,7 +8,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Pre-requisitos 📋
 
-_Instalar node.js, mysql workbench _
+_Instalar Node.js, Mysql Workbench _
 
 
 ### Instalación 🔧
@@ -80,14 +80,14 @@ _[POST] localhost:4444/user/login_
 
 ```
 {
-        "USER_NAME": "asdsa",
-        "EMAIL": "dsadsa",
-        "PASSWORD": "dsads"
+        "USER_NAME": "luciano",
+        "EMAIL": "luciano@gmail.com",
+        "PASSWORD": "acamica"
     }
 ```
 ### Ejemplo de RESPUESTA /user/login 👌
 
-_Este token lo usaras mas adelante para las pruebas asi que tenlo presente_
+_Necesitaras tener un token para pruebas de USER y un token para pruebas de ADMIN_
 
 ```
 {
@@ -119,8 +119,8 @@ _[POST] localhost:4444/productos/add_
 
 ```
 {
-        "PRODUCT_NAME": "name", 
-        "PRODUCT_PRICE": "11", 
+        "PRODUCT_NAME": "hamburguesa", 
+        "PRODUCT_PRICE": "250", 
         "PRODUCT_IMAGE": "https://.jpg",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTUsIlVTRVJfTkFNRSI6ImFzZHNhIiwiRU1BSUwiOiJkc2Fkc2EiLCJST0xFIjoiQURNSU4iLCJpYXQiOjE2MDA5OTMwNzB9.PomyN_NdYIdbdFuWhGtetopD8TGiyeoUV18GF08uDTg"
     }
@@ -197,7 +197,7 @@ _[POST] localhost:4444/productos/update_
 
 ### Obtener un pedido 🔔
 
-_Los admins pueden veer todos los pedidos. Los users no admins solo tienen permisos para retornar sus proprios pedidos_
+_Los admins pueden ver todos los pedidos. Los users no admins solo tienen permisos para retornar sus propios pedidos_
 
 _[GET] localhost:4444/order?token<>_
 
@@ -298,4 +298,4 @@ _[POST] localhost:4444/order/delete_
 ```
 
 
-Por favor lee el [README.md](https://github.com/laynaPatino/API-Delilah/blob/main/README.md) para detalles deL código.
+https://github.com/Luciano-Olmedo/Api-Delilah
